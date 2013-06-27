@@ -1,0 +1,19 @@
+<form action='/school' method='POST'>
+  <label>name</label>
+    <input type="text" name="school[name]" />
+  <label>size</label>
+    <input type="text" name="school[size]" />
+  <label>location</label>
+    <input type="text" name="school[location]" />
+  
+  <label>name</label>
+    <input type="text" name="school[courses][][name]" />
+  <label>size</label>
+    <input type="text" name="school[courses][][size]" />
+  <label>teacher</label>
+    <input type="text" name="school[courses][][teacher]" />
+
+
+
+  <input type="submit" value="enter"/>
+</form>

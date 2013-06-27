@@ -1,0 +1,14 @@
+<p>Name of school is: <%= @school.name %></p>
+
+<p>Size of school is: <%= @school.size %></p>
+
+<p>Location of school is: <%= @school.location %></p>
+
+<p><%= @school.name %> has these courses:</p>
+
+<p> <% @school.courses.each do |course| %>
+    <%= course.name %><br>
+    <%= course.size %><br>
+    <%= course.teacher %>
+  <% end %>
+</p>
